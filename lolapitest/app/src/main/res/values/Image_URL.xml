@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="PROFILE_ICON_BASE_URL">https://ddragon.leagueoflegends.com/cdn/12.6.1/img/profileicon/</string>
+    <string name="CHAMPION_SQUARE_IMAGE_BASE_URL">https://ddragon.leagueoflegends.com/cdn/12.6.1/img/champion/</string>
+    <string name="ITEM_IMAGE_BASE_URL">http://ddragon.leagueoflegends.com/cdn/12.6.1/img/item/</string>
+
+</resources>

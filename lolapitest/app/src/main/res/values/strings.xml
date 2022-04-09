@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">YH.GG</string>
+    <string name="win">#8EC0E8</string>
+    <string name="lose">#DA8680</string>
+</resources>

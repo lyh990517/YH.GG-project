@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "79289878384",
+    "firebase_url": "https://yhgg-project-default-rtdb.firebaseio.com",
+    "project_id": "yhgg-project",
+    "storage_bucket": "yhgg-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79289878384:android:ce37d41372c1c44274b1b5",
+        "android_client_info": {
+          "package_name": "yunho.app.lolapitest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79289878384-7qm50a6g5l9os0vkgmnqr6mfic5h2ec9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB82jgSfLkP9F6Bctxg40CNJNhSbk5tN6g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79289878384-7qm50a6g5l9os0vkgmnqr6mfic5h2ec9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

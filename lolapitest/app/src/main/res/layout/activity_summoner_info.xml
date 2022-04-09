@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/InfoView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/main_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/SummonerNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            tools:text="do skip leg day"
+            app:layout_constraintStart_toEndOf="@+id/profileImageView"
+            app:layout_constraintTop_toTopOf="@+id/profileImageView" />
+
+        <ImageView
+            android:id="@+id/TierImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/SummonerLevelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="205"
+            app:layout_constraintEnd_toEndOf="@id/profileImageView"
+            app:layout_constraintStart_toStartOf="@id/profileImageView"
+            app:layout_constraintTop_toBottomOf="@+id/profileImageView" />
+
+        <TextView
+            android:id="@+id/RankTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+
+            tools:text = "GOLD"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/SummonerNameTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/queueTypeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="RANKED_SOLO_5x5"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/TierImageView"
+            app:layout_constraintStart_toStartOf="@+id/TierImageView"
+            app:layout_constraintTop_toBottomOf="@id/TierImageView" />
+
+        <TextView
+            android:id="@+id/TierTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            tools:text="III"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/RankTextView"
+            app:layout_constraintStart_toEndOf="@+id/RankTextView" />
+        <TextView
+            android:id="@+id/leaguePointTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            tools:text="59"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/RankTextView"
+            app:layout_constraintStart_toEndOf="@+id/TierTextView" />
+        <TextView
+            android:id="@+id/wins"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Wins"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@id/RankTextView"
+            app:layout_constraintTop_toBottomOf="@+id/RankTextView" />
+
+        <TextView
+            android:id="@+id/winsVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            tools:text="50"
+            app:layout_constraintBottom_toBottomOf="@+id/wins"
+            app:layout_constraintStart_toEndOf="@+id/wins" />
+
+        <TextView
+            android:id="@+id/loses"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Loses"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@id/RankTextView"
+            app:layout_constraintTop_toBottomOf="@+id/wins" />
+
+        <TextView
+            android:id="@+id/losesVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            tools:text="50"
+            app:layout_constraintBottom_toBottomOf="@+id/loses"
+            app:layout_constraintStart_toEndOf="@+id/loses" />
+
+        <TextView
+            android:id="@+id/winRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Win Rate"
+            app:layout_constraintStart_toStartOf="@id/RankTextView"
+            app:layout_constraintTop_toBottomOf="@+id/loses" />
+
+        <TextView
+            android:id="@+id/winRateVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            tools:text="50%"
+            app:layout_constraintBottom_toBottomOf="@+id/winRate"
+            app:layout_constraintStart_toEndOf="@+id/winRate" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InfoView"
+        tools:listitem="@layout/item_match" />
+</androidx.constraintlayout.widget.ConstraintLayout>
